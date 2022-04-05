@@ -1,0 +1,114 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    --primary-color: #fff;
+    --secondary-color: #110034;
+    --color: #110034;
+    --background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Setting Background colors with variables */
+body {
+    background-color: var(--primary-color);
+}
+
+h1 {
+    color: var(--color);
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+a {
+    color: var(--color);
+    /* font-size: 3rem; */
+    text-decoration: none;
+}
+
+h1#heading {
+    font-size: 3rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--secondary-color);
+}
+
+i {
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin: 10px;
+}
+
+ol li {
+    color: var(--secondary-color);
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: square;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--background-color);
+}
+
+/* Making i button better */
+#darkMode:hover {
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .block {
+    margin: 1rem;
+    /* border: 1px solid green; */
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.block ol {
+    padding: 1rem 2rem;
+}
+
+.block h2 {
+    font-size: 1.6rem;
+}
+
+.read-more {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Iframe( Youtube Embed Links) */
+iframe {
+    margin: 1rem auto;
+}
